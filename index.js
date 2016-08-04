@@ -1,6 +1,6 @@
 'use strict';
 
-if (!(Number(process.version.match(/^v(\d+\.\d+)/)[1]) >= 6.0)) {
+if (Number(process.version.match(/^v(\d+\.\d+)/)[1]) >= 6.0) {
   return;
 }
 
