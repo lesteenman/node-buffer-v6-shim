@@ -1,6 +1,6 @@
 {
   "name": "buffer-v6-polyfill",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A polyfill for older versions of node.js for the node v6 Buffer",
   "main": "index.js",
   "scripts": {
