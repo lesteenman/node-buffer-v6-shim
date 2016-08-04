@@ -1,8 +1,3 @@
-# node-buffer-v6-shim
-
-A shim for older versions of node &lt; v6 for methods such as `allow()`, `from()`, etc
-
-```javascript
 'use strict';
 
 if (!(Number(process.version.match(/^v(\d+\.\d+)/)[1]) >= 6.0)) {
@@ -22,4 +17,3 @@ Buffer.alloc = newBuffer;
 Buffer.allocUnsafe = newBuffer;
 Buffer.allocUnsafeSlow = newSlowBuffer
 Buffer.from = newBuffer;
-```
