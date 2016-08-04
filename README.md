@@ -2,6 +2,20 @@
 
 A shim for older versions of node &lt; v6 for methods such as `allow()`, `from()`, etc
 
+Usage
+-----
+
+```
+'use strict';
+
+require('buffer-v6-polyfill');
+
+// all your codez ...
+```
+
+Show me the Code
+----------------
+
 ```javascript
 'use strict';
 
