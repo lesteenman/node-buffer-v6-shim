@@ -32,8 +32,16 @@ function newSlowBuffer(data, encoding, len) {
   return new SlowBuffer(data, encoding, len);
 }
 
-Buffer.alloc = newBuffer;
-Buffer.allocUnsafe = newBuffer;
-Buffer.allocUnsafeSlow = newSlowBuffer
-Buffer.from = newBuffer;
+if (!Buffer.alloc) {
+  Buffer.alloc = newBuffer;
+}
+if (!Buffer.allocUnsafe) {
+  Buffer.allocUnsafe = newBuffer;
+}
+if (!Buffer.allocUnsafeSlow) {
+  Buffer.allocUnsafeSlow = newSlowBuffer;
+}
+if (!Buffer.from) {
+  Buffer.from = newBuffer;
+}
 ```
